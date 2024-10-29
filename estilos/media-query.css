@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) {
+    html> body{
+        background-image: linear-gradient(to bottom, var(--cor2), var(--cor1));
+    }
+
+    main > section{
+        width: 90vw;
+        height: 280px;
+    }
+    
+    main > section> div#formulario{
+        position: relative;
+        top: -280px;
+        left: 290px;
+        width: 55vw;
+        height: 280px;
+     }
+
+    /* min-width: 700px;
+        min-height: 280px; */
+
+    main > section> div#imagem{
+        width: 30vw;
+        height: 280px;
+        background-position: center bottom;
+        border-radius: 10px 0px 0px 10px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    main > section{
+        width: 950px;
+        height: 350px;
+        
+    }
+
+    main > section> div#formulario{
+        position: relative;
+        top: -330px;
+        left: 0px;
+        width: 500px;
+        height: 280px;
+     }
+
+     main > section> div#imagem{
+        position: relative;
+        top: 0px;
+        left: 500px;
+        width: 450px;
+        height: 350px;
+        background-position: center bottom;
+        border-radius: 0px 10px 10px 00px;
+    }
+
+    main div.senha, div.email{
+        width: 450px;
+    }
+
+    main div.botao1, div.botao2{
+        width: 450px;
+    }
+
+    main h1{
+        font-size: 2em;
+        font-weight: bolder;
+    }
+    
+    main p{
+        text-align: left;
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    input{
+        width: 400px;
+        height: 25px;
+    }
+}
+
