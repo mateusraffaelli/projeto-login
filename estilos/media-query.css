@@ -6,26 +6,34 @@
     }
 
     main > section{
-        width: 90vw;
+        width: 80vw;
         height: 280px;
     }
-    
-    main > section> div#formulario{
+
+     main > section#login> div#imagem{
+        float: left;
+        width: 30%;
+        height: 100%;
+        /* Minha solução:
+        width: 30vw;
+        height: 280px;
+        background-position: center bottom;
+        border-radius: 10px 0px 0px 10px; */
+    }
+
+    main > section#login> div#formulario{
+        float: right; /* Quando coloca display "block" para as caixas, pode escolher o lado que fica*/
+        width: 66%;
+        /* Minha solução:
         position: relative;
         top: -280px;
         left: 290px;
         width: 55vw;
-        height: 280px;
+        height: 280px;*/
      }
 
-    /* min-width: 700px;
-        min-height: 280px; */
-
-    main > section> div#imagem{
-        width: 30vw;
-        height: 280px;
-        background-position: center bottom;
-        border-radius: 10px 0px 0px 10px;
+     div.campo > input{
+        width: calc(90% - 22px);
     }
 }
 
@@ -33,35 +41,38 @@
     main > section{
         width: 950px;
         height: 350px;
-        
     }
 
-    main > section> div#formulario{
+    main > section#login> div#formulario{
+        float: left;
+        width: 52%;
+        /* Minha solução:
         position: relative;
         top: -330px;
         left: 0px;
         width: 500px;
-        height: 280px;
+        height: 280px; */
      }
 
-     main > section> div#imagem{
+     main > section#login> div#imagem{
+        float: right;
+        width: 45%;
+        height: 100%;
+        background-position: center center;
+        
+        /* Minha solução:
         position: relative;
         top: 0px;
         left: 500px;
         width: 450px;
-        height: 350px;
-        background-position: center bottom;
-        border-radius: 0px 10px 10px 00px;
+        height: 350px; */
+        
     }
-
-    main div.senha, div.email{
-        width: 450px;
+    
+    div.campo > input{
+        width: calc(90% - 13px);
     }
-
-    main div.botao1, div.botao2{
-        width: 450px;
-    }
-
+    
     main h1{
         font-size: 2em;
         font-weight: bolder;
@@ -70,12 +81,7 @@
     main p{
         text-align: left;
         font-size: 1em;
-        padding: 10px;
-    }
-
-    input{
-        width: 400px;
-        height: 25px;
+        margin: 10px 0px;
     }
 }
 
